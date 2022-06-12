@@ -1,0 +1,32 @@
+.CardContainer {
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card {
+    width:375px;
+}
+
+.CardContent {
+    padding:20px;
+}
+
+.CardHeading {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(214, 17%, 51%);
+    margin: 0 0 20px 0;
+}
+
+.CardText {
+    margin: 0 0 30px 0;
+}
+
+.CardName {
+    font-size: 13px;
+    font-weight: 700;
+    color: hsl(214, 17%, 51%);
+
+}
