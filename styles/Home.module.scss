@@ -7,16 +7,19 @@
 
 .Card {
     width:375px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: hsl(210, 46%, 95%);
 }
 
 .CardContent {
-    padding:20px;
+    padding:30px;
 }
 
 .CardHeading {
     font-size: 20px;
     font-weight: 700;
-    color: hsl(214, 17%, 51%);
+    color: hsl(217, 19%, 35%);
     margin: 0 0 20px 0;
 }
 
@@ -24,9 +27,33 @@
     margin: 0 0 30px 0;
 }
 
+.CardFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.AuthorContainer {
+    display: flex;
+    gap: 16px;
+}
+
+.Avatar {
+    border-radius: 50%;
+}
+
 .CardName {
     font-size: 13px;
     font-weight: 700;
-    color: hsl(214, 17%, 51%);
-
+    color: hsl(217, 19%, 35%);
 }
+
+.ShareBtn {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(212, 23%, 69%);
+    color: hsl(210, 46%, 95%);
+}
+
