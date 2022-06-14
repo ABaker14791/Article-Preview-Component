@@ -13,7 +13,7 @@
 }
 
 .CardContent {
-    padding:30px;
+    margin:30px;
 }
 
 .CardHeading {
@@ -24,12 +24,13 @@
 }
 
 .CardText {
-    margin: 0 0 30px 0;
+    padding: 0 0 30px 0;
 }
 
 .CardFooter {
     display: flex;
     justify-content: space-between;
+    padding: 20px 30px 20px 30px;
 }
 
 .AuthorContainer {
@@ -57,3 +58,31 @@
     color: hsl(210, 46%, 95%);
 }
 
+// active classes
+
+.CardFooterActive {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.ShareText {
+    color: hsl(212, 23%, 69%);
+    font-size: 16px;
+    letter-spacing: 5px;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+.SocialIcons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.SocialIcons img {
+    width: 40px;
+    height: 40px;
+}
