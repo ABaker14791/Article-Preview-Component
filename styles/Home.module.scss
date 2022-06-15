@@ -6,31 +6,28 @@
 }
 
 .Card {
-    width:375px;
-    border-radius: 16px;
+    width:330px;
+    border-radius: 10px;
     overflow: hidden;
-    background-color: hsl(210, 46%, 95%);
+    background-color: #fff;
+    box-shadow: 5px 10px 15px rgb(0 0 0 / 10%)
 }
 
 .CardContent {
-    margin:30px;
+    margin:30px 30px 18px 30px;
 }
 
 .CardHeading {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     color: hsl(217, 19%, 35%);
-    margin: 0 0 20px 0;
-}
-
-.CardText {
-    padding: 0 0 30px 0;
+    margin: 0 0 10px 0;
 }
 
 .CardFooter {
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px 20px 30px;
+    padding: 0px 40px 20px 40px;
 }
 
 .AuthorContainer {
@@ -40,6 +37,8 @@
 
 .Avatar {
     border-radius: 50%;
+    width: 42px;
+    height: 42px;
 }
 
 .CardName {
@@ -50,11 +49,11 @@
 
 .ShareBtn {
     border-radius: 50%;
-    height: 40px;
-    width: 40px;
+    height: 42px;
+    width: 42px;
     border: none;
     cursor: pointer;
-    background-color: hsl(212, 23%, 69%);
+    background-color: var(--Light-Grayish-Blue);
     color: hsl(210, 46%, 95%);
 }
 
@@ -63,13 +62,12 @@
 .CardFooterActive {
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px 20px 30px;
+    padding: 16px 30px 16px 30px;
     background-color: hsl(217, 19%, 35%);
 }
 
 .ShareText {
     color: hsl(212, 23%, 69%);
-    font-size: 16px;
     letter-spacing: 5px;
     align-self: center;
     text-transform: uppercase;
@@ -87,9 +85,20 @@
     height: 40px;
 }
 @media screen and (min-width: 600px) {
-    .Card {
-        display: flex;
-        flex-direction: row;
-        width: 600px;
-    }
+
+.Card {
+    display: flex;
+    flex-direction: row;
+    width: 730px;
+}
+
+.Heroimg {
+    width: 287px;
+}
+
+.CardContent {
+    margin:40px 40px 20px 40px;
+}
+
+
 }
