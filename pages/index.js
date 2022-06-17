@@ -7,6 +7,7 @@ import drawers from "../images/drawers.jpg";
 import avatar from "../images/avatar-michelle.jpg";
 // icons
 import shareIcon from "../images/icon-share.svg";
+import shareIconWhite from "../images/icon-share-white.svg";
 import facebookIcon from "../images/icon-facebook.svg";
 import pinterestIcon from "../images/icon-pinterest.svg";
 import twitterIcon from "../images/icon-twitter.svg";
@@ -73,8 +74,8 @@ export default function Home() {
                       <p className={Styles.CardDate}>28 Jun 2020</p>
                     </div>
                   </div>
-                  <button className={Styles.ShareBtn} onClick={openShare}>
-                    <Image src={shareIcon} />
+                  <button className={Styles.ShareBtnActive} onClick={openShare}>
+                    <Image src={shareIconWhite} />
                   </button>
                 </div>
               </div>

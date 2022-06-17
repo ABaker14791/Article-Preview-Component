@@ -1,124 +1,133 @@
 .CardContainer {
-    display: flex;
-    height:100vh;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .Card {
-    width:330px;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #fff;
-    box-shadow: 5px 10px 15px rgb(0 0 0 / 10%);
+  width: 330px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 5px 10px 15px rgb(0 0 0 / 10%);
 }
 
 .CardContent {
-    margin:30px 30px 18px 30px;
+  margin: 30px 30px 18px 30px;
 }
 
 .CardHeading {
-    font-size: 16px;
-    font-weight: 700;
-    color: hsl(217, 19%, 35%);
-    margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+  margin: 0 0 10px 0;
 }
 
 .CardFooter {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 40px 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px 20px 40px;
 }
 
 .AuthorContainer {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 .Avatar {
-    border-radius: 50%;
-    width: 42px;
-    height: 42px;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
 }
 
 .CardName {
-    font-size: 13px;
-    font-weight: 700;
-    color: hsl(217, 19%, 35%);
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
 }
 
 .ShareBtn {
-    border-radius: 50%;
-    height: 42px;
-    width: 42px;
-    border: none;
-    cursor: pointer;
-    background-color: var(--Light-Grayish-Blue);
-    color: hsl(210, 46%, 95%);
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--Light-Grayish-Blue);
+  color: hsl(210, 46%, 95%);
 }
 
 // active classes
 
 .CardFooterWrapper {
-    position: relative;
+  position: relative;
 }
 
 .CardFooterActive {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    border-radius: 0 0 10px 10px;
-    justify-content: space-between;
-    padding: 12px 30px 15px 30px;
-    background-color: hsl(217, 19%, 35%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  border-radius: 0 0 10px 10px;
+  justify-content: space-between;
+  padding: 12px 40px 20px 40px;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.ShareBtnActive {
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--Very-Dark-Grayish-Blue);
+  color: var(--Light-Grayish-Blue);
 }
 
 .ShareText {
-    color: hsl(212, 23%, 69%);
-    letter-spacing: 5px;
-    align-self: center;
-    text-transform: uppercase;
+  color: hsl(212, 23%, 69%);
+  letter-spacing: 5px;
+  align-self: center;
+  text-transform: uppercase;
 }
 
 .SocialIcons {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
 }
 
 .SocialIcons img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 @media screen and (min-width: 600px) {
-
-.Card {
+  .Card {
     display: flex;
     flex-direction: row;
     width: 730px;
     overflow: visible;
-}
+  }
 
-.Heroimg {
+  .Heroimg {
     width: 287px;
     border-radius: 10px 0 0 10px;
-}
+  }
 
-.CardContent {
-    margin:40px 40px 20px 40px;
-}
+  .CardContent {
+    margin: 40px 40px 20px 40px;
+  }
 
-.CardFooterWrapper {
+  .CardFooterWrapper {
     position: relative;
-}
+  }
 
-.CardFooterActive {
+  .CardFooterActive {
     position: absolute;
-    bottom:80px;
+    bottom: 80px;
     left: unset;
     right: -60px;
     width: 240px;
@@ -128,22 +137,20 @@
     padding: 16px 30px 16px 30px;
     background-color: hsl(217, 19%, 35%);
     z-index: 10;
-}
+  }
 
-.CardFooterActive .ShareBtn {
+  .CardFooterActive .ShareBtn {
     display: none;
-}
+  }
 
-.CardFooterActive::after {
+  .CardFooterActive::after {
     content: "";
     background-color: hsl(217, 19%, 35%);
     width: 20px;
     height: 20px;
     transform: rotate(45deg);
     position: absolute;
-    bottom:-10px;
+    bottom: -10px;
     left: 110px;
-}
-
-
+  }
 }
